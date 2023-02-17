@@ -45,4 +45,11 @@ const promptUser = () => {
         },
     ])
     //generate file
+    .then((answers) => {
+        const htmlPageContent = generateHTML(answers);
+    
+        fs.writeFile('index.html', htmlPageContent, (err) =>
+          err ? console.log(err) : console.log('Success!')
+        );
+      });
 }
