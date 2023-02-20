@@ -7,7 +7,7 @@ const Intern = require('./lib/Intern');
 const fs = require('fs');
 
 //Initialize asking questions
-const generateHtml = require('./src/generate-html');
+const { writeFile } = require('./src/generate-html');
 
 //Start the questions
 const promptUser = () => {
@@ -45,10 +45,10 @@ const promptUser = () => {
         },
     ])
     //generate file
-    .then((answers) => {
-        const htmlPageContent = generateHTML(answers);
+    .then((data) => {
+        const htmlPageContent = generateHTML(data);
     
-        fs.writeFile('index.html', htmlPageContent, (err) =>
+        fs.writeFile('generate.html', htmlPageContent, (err) =>
           err ? console.log(err) : console.log('Success!')
         );
       });

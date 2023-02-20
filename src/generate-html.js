@@ -15,6 +15,7 @@ const generateHTML = ({ name, id, email, github }) =>
 
 <body>
  <div class="jumbotron jumbotron-fluid">
+    
 
  </body>
 </html>`;
