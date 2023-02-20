@@ -3,6 +3,14 @@
 ## Description
 This is a Node.js command-line application that gathers infomation about software engineer team and generates a webpage that displays the information of each employee. 
 
+## Table of Contents
+
+- [Installation](#installtion)
+- [Test](#test)
+- [Demo](#demo)
+- [Questions](#questions)
+
+
 ## Installation
 This application requires inquiere 8.2.4. To install dependancies run command: 
 
