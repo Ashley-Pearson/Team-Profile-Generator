@@ -27,7 +27,7 @@ npm test
 ``
 
 ## Demo
-Drop video link here - 
+Placeholder- Drop video link here - Still working on completing application
 
 
 ## Questions
